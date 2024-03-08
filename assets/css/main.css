@@ -22,15 +22,20 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
 body {
 	line-height: 1;
+}
+
+.sub-body{
+	background-color: #f4f4f4;
 }
 
 ol, ul {
@@ -98,7 +103,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Open Sans', sans-serif;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		line-height: 1.85em;
 		color: #888;
 		font-weight: 300;
@@ -110,12 +115,12 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
+		color: #A92159;
 		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: #cc628e;
 		}
 
 		a img {
@@ -208,6 +213,10 @@ input, select, textarea {
 		margin: 0 0 3em 0;
 	}
 
+	.hi-header{
+		margin: 150px 0 3em 100px;
+	}
+
 		header > p {
 			font-size: 1.25em;
 			margin: 0;
@@ -220,6 +229,10 @@ input, select, textarea {
 		footer > p {
 			font-size: 1.25em;
 		}
+.hi-title {
+	/* padding-top: 50px; */
+	margin-top: 100px;
+}
 
 /* Container */
 
@@ -1620,6 +1633,16 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
+/* my-head*/
+.my-head {
+	text-align: center;
+	padding-top: 0;
+}
+
+.my-head img {
+	width: 250px;
+}
+
 /* Image */
 
 	.image {
@@ -1678,15 +1701,17 @@ input, select, textarea {
 		display: inline-block;
 		color: #fff !important;
 		text-decoration: none;
-		font-weight: 700;
+		font-weight: 200;
 		border: 0;
 		outline: 0;
 		cursor: pointer;
 		border-radius: 8px;
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #B61F7D;
+		/*
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+        */
+		background-color: #A92159;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1697,7 +1722,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #B61F7D;
+			background-color: #cc628e;
 			color: #fff !important;
 		}
 
@@ -1706,7 +1731,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #B61F7D;
+			background-color: #cc628e;
 			top: 1px;
 		}
 
@@ -1715,7 +1740,7 @@ input, select, textarea {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 1em;
+			font-size: 1.5em;
 			letter-spacing: -0.025em;
 		}
 
@@ -1987,9 +2012,9 @@ input, select, textarea {
 /* Wrappers */
 
 	.wrapper {
-		background-image: url("images/bg.png");
+		backgroundbackground-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 8em 0 8em 0;
+		padding: 2em 0 2em 0;
 		text-align: center;
 	}
 
@@ -2006,7 +2031,22 @@ input, select, textarea {
 		.wrapper.style3 {
 			background-color: #f4f4f4;
 			text-shadow: 1px 1px 0px #fff;
+	
 		}
+
+			.wrapper.style3 h2 {
+				color: #A92159;
+			}
+
+			.wrapper.style3 p {
+				text-align: left;
+				color: #000000;
+				padding-left: 80px;
+				padding-right: 80px
+			}
+
+
+
 
 		.wrapper.style4 {
 			background-color: #303030;
@@ -2036,7 +2076,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #B61F7D;
+		background-color: #A92159;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2046,6 +2086,7 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
 	}
 
 		#nav ul {
@@ -2079,11 +2120,11 @@ input, select, textarea {
 
 			#nav a:hover {
 				color: #fff !important;
-				background: #383838;
+				background: #c1326e;
 			}
 
 			#nav a.active {
-				background: #484848;
+				background: #c1326e;
 			}
 
 				#nav a.active:before {
@@ -2104,32 +2145,32 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
-	#top {
+	#home {
 		padding: 10em 0 10em 0;
 		text-align: left;
 	}
 
-		#top .image {
+		#home .image {
 			border-radius: 100%;
 			width: 20em;
 			height: 20em;
 			margin: 0;
 		}
 
-			#top .image img {
+			#home .image img {
 				border-radius: 100%;
 			}
 
-		#top h1 {
+		#home h1 {
 			margin-top: 0.35em;
 		}
 
-		#top p {
+		#home p {
 			font-size: 1.5em;
 			line-height: 1.75em;
 		}
 
-			#top p a {
+			#home p a {
 				color: inherit;
 			}
 
@@ -2207,11 +2248,11 @@ input, select, textarea {
 
 		/* Articles */
 
-			#top {
+			#home {
 				padding: 8em 0;
 			}
 
-				#top .image {
+				#home .image {
 					width: 24em;
 					height: 24em;
 					margin: 0;
@@ -2225,12 +2266,12 @@ input, select, textarea {
 
 		/* Articles */
 
-			#top {
+			#home {
 				text-align: center;
 				padding: 5em 0;
 			}
 
-				#top .image {
+				#home .image {
 					margin: 0 auto 2em auto;
 				}
 
@@ -2405,17 +2446,17 @@ input, select, textarea {
 
 		/* Articles */
 
-			#top {
+			#home {
 				padding: 3em 0;
 			}
 
-				#top .image {
+				#home .image {
 					width: 15em;
 					height: 15em;
 					margin-bottom: 0;
 				}
 
-				#top p {
+				#home p {
 					font-size: 1em;
 				}
 
